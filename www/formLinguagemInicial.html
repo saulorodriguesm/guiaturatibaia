@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>GuiaTur</title>
+
+    <script src="m/dist/jquery.min.js"></script>
+    <script src="m/dist/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="f7/css/framework7.min.css">
+    <link rel="stylesheet" href="m/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="f7/css/my-app.css">
+    <link rel="stylesheet" href="f7/css/animated.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <div class="backLoadIndex">
+
+        <div class="load-Index">
+            <img class="load-img-Index responsive-img" src="img/slogam-apre.png">
+        </div>
+
+    </div>
+
+
+    <!-- App root element -->
+    <div id="app">
+        <div id="google_translate_element2"></div>
+
+        <div class="statusbar"></div>
+
+        <div class="view view-main">
+            <div class="page" data-name="linguagemindex">
+                <div class="page-content background-form-linguagem">
+
+                    <div class="card card_form_linguagem">
+                        <div class="card-header center">Selecione a Linguagem</div>
+                        <div class="card-content">
+                            <div class="list media-list">
+                                <ul>
+                                    <li class="item-content intem_content_form_lingaguem">
+                                        <div class="item-media">
+
+                                            <!-- onclick="doGTranslate('pt|en');return false;"-->
+
+                                            <a href="#" id="btn-ling-en" title="English" class="gflag nturl" style="background-position:-0px -0px;">
+                                    <img src="data:image/png;base64,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" height="auto" width="80" alt="English" />
+                                </a>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title title_form_linguagem">Inglês</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="item-content">
+                                        <div class="item-media">
+
+                                            <!-- onclick="doGTranslate('pt|ja');return false;"-->
+
+                                            <a href="#" id="btn-ling-jan" title="Japanese" class="gflag nturl" style="background-position:-700px -100px;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOOSURBVHhe7Z3bTlNBGIVLwuEBOHkL4RE0glccjCjI4SXk5A2C4ksI+kzKQdELxdBiD2lJL9xlb2h5grH/DmhCFkmFzsy/6fqSLyGEdv+sBaUznYYUIYQQQgghhBBCCCGEEEIIIYT8I4rOh6Na7TF1YD3ri9ivJ6zWDqLquaH2lawvYr8eFuJOFqJMFqJMFqJMFqJMFqJMFqJMFqJMFqJMFqJMFqLMu1HIadUEH7dNeXPLFBeXTGF+3uRGR2Pl4+LSsilvvTfBp534a+F9KDHRhUjAxRcLJtPdbQ5TqYbM9PXFt/m9vQvv07eJLCTY3TO5J5PmsK0Nht6Q9dvmJ5+aYO8zvIYvE1VIeBKZ0uqqSbe345BvYLqjw5TWX5swPIXXdG1iCjn5lTXZ+w9gqM0w93C4fo0cvLZLE1FI5fuBORoYgEE206PBwfhaaAZXqi/kJJuPg0IB2lCuFeYKcBYXqi4krIRWH6auMzc84u1viupCSq/WYGAuPH6zAWeyrdpC5KltM59N/a/y7CvY/wpns6naQuJ1BgjKpfmpaTibTVUWIivwWy36mmV9BvlNRTPaUmUhsrUBA/Kg7IOhGW2pr5DTqkn39MBwfCh7X9FZDc9qQXWFyK4tCsanwY67jUh1hZTfbcJQfFre+gBntaG6QuT1DBSKT4vLK3BWG6orpDAzA0PxaWFuDs5qQ3WF5MfHYSg+zU9MwFltqK+Q+jePQvFpSxdSmJ2Fofi0pR+yZCGGQvFpaeUlnNWG6gqR0yEoFJ+29NPeeB8LhOLTll4YytZJprcXBuPDTP+91t46EYsLizAcH7pcFIoqC5FDbGq23x2f21JZiCiH2GBIDs1PP4ez2VRtIfKTKS+joqCc2NXFl3CvWlpbx2E58HjjLZzJtqoLkaOjcqIQBWbT7MgjE0VncCbbqi5ElENrPCh3BZ+FiPFRUgelHA0NmcqPn3AGVyaiEFEOQstDCQqyGcp9+/zNuDQxhYhyvFPeOpDu7ISh3kS5LzmlyLcj3MLgy77JP5u63eKxfltZZ1T2v8Fr+DKRhVwqK3rZrs/09ePQgfK1sp3u+gBcoya6kL+e1eJyZOtewo7f9Dk2Fisfy+dkCz0uweFG4U28G4XcIVmIMlmIMlmIMlmIMlmIMlmIMlmIMlmIMlmIMlmIMlmIMhsqhP+uwqGN/LsKQgghhBBCCCGEEEIIIYQQQkjLkEr9AYePLUICj+YYAAAAAElFTkSuQmCC" height="auto" width="80" alt="Japanese" />
+                                </a>
+
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title title_form_linguagem">Japones</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="item-content">
+                                        <div class="item-media">
+                                            <a href="#" id="btn-ling-br" title="Portuguese" class="gflag nturl" style="background-position:-300px -200px;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVOSURBVHhe7Z3/T1VlHMf5s9paaag1FxCQtTZxfTGa1hYEis4wf7HJVm7NhgkRAllgQfkDF9NFpuBGXvxCjFDEbpJyCUPk2xba+nQ/Z/fMx+vnXM7znOec85zL5729tgvcL88+b17n3MtzNvI4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA7nYQq7Sp54/kTResZ/cNbpsTun4LviXwu+LwYmAFKzTo/dOVxIgHAhhsGFGAYXYhhciGHkYiGbu4ugbzTfAm9T9zGWXCukrm8j3Jt8CuDOkxZ4G79H3ddIcqUQ2wq7iEwiY0suFJJphRORsCXKhaxkhRNG2xLVQtxa4YSxtkStEFUrnDDOligV4tUKJ4yyJQqF6LbCCSNsMb0Qv6xwInRbTC1ExYqpaxvhzA9bofN4JTQ07LXA2/g9/Bn1GCdCs8XEQmSsWLiZD20tNVBe0QxrSmJZwfvgffEx1HNlEootJhUiY8Vycg10fFUFBWVd5PCzUVjWCR1fV8H95NPkc2cSqC2mFCJjxZ3rz8G26s/JYcuwvboRZm48S75GJoHZEnYhsueK8Ssl8OLrHeSAVdj0RjskhorJ16Lw3ZYwC5GxAkEzcIDUYL2Az3nXpSmIr7aEUYisFQieM3QcppzA53Z7TrHxxZagC5G1wqb9WDU5SJ180/4e+drZ0G5LUIWoWGGzMPECXB2fgdvJJZidW4b5hfsWd2f/gYlbizBybRYGLk7DiZM3of7ob7D7wzi8su0MOfRsFG7phMWJdeQaVkKbLUEUomqFzWC8G1Qykyrs3EASDqdKevXds2QJmXzZVkOuwQ1abPGzEC9WiCSn7qVH7C2JiQVoOT4Gr1WcI8tAyiu/INcggydb/CrEqxU20zc2p8epN0MjM/B+3SA8U9rzSCFrS7vhL8k/s1Ao26K7EF1W2Fzor4Xm9jH4+LNh2PfRJaituwhV+36BPQcGra8PHBqCI22j0BVLQP+FKRhPzMGDf/9Lj33l3JpcgoNHhiF/08NifoyVk2tRQdoWnYXoskLk247KR36D3bDh5ZOwfdd5ONQ0Ar19t2Fx6UF6/M7Bw1nF3gHr8Uebd5NrUUXKFh2F6LZCpKGx9rGBy7I+VdCu/XHo6f0T5uaX0xXQ6e2fhJbWg+RavOLKltVQiAiWs/+TKzB63fmNwqXL58m1eCWwQmxMOWS5Ba25Ov54MfF4jFyLKoEfskR02/LzqTfJYepibWkM6j4dsj5w2hm+3EiuRQVXVojoLsRGly2404dvRalh6qRgy2n4KXX+wPz9exm5FhmkrBDxqxBEly1udgN1Ud90mlyDDNJWiPhZiI1XW9paa8jh+cGx1p3kGtygbIVIEIUgXmyZ/2Odte1KDVAnRavlj4siqrbgHjg1RJ3gOzrqtbOhxQqRoAtBVGzBzSM/N6je2dGwOjeoRGRtwQsS/NrCnU1sIF+TQrsVImEWgsjaghck6Czlpa18kQOJjC1oyts7GskBy4CHKbcXN/hqhYgphSAytuDxHk/0+M6IGnY28DG4f84XyrlExhbrUtLU5xTc6cv2iR5/9lZlk/U5gy8lVUD23ILgTh9uLuF+Rv3hDyzwdm9POUyP8cXWWpCxRQehWCFieiGIii0qhGaFSBQKsfHLltCtEIlSIYhuW4ywQiRqhdh4tcUoK0SiWgiiaotxVohEuRAbt7YYa4VILhSCrGSL0VaI5EohNpm2RMIKkVwrBLFtiYwVIrlYSKThQgyDCzEMLsQwuBDD4EIMw00h/O8qgsPVv6vgcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDirJnl5/wNNUNZ3f7g0PgAAAABJRU5ErkJggg==" height="auto" width="80" alt="Portuguese" />
+                                </a>
+
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title title_form_linguagem">Português (BR)</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="item-content">
+                                        <div class="item-media">
+
+                                            <!-- onclick="doGTranslate('pt|es');return false;"-->
+
+                                            <a href="#" id="btn-ling-esp" title="Spanish" class="gflag nturl" style="background-position:-600px -200px;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAErSURBVHhe7d2xSQVRGAXhC4oWoy+3AMsythi7sAXj9zA1EyMxWllYMFrYZJcBv4Fp4Ez6X+4AAAAAAAAAAAAAgD/eT+PhchqP3N9562X2dc534+1yPybu77z1Mvs6ghynIDEFiSlITEFiChJTkJiCxBQkpiAxBYkpSExBYgoSU5CYm4J8Pl19fD1fT9zfeetl9nV+Xm6+p9fbifs7b73Mvo4gxylITEFiChJTkJiCxBQkpiAxBYkpSExBYgoSU5CYgsQUJKYgMQWJKUhMQWIKElOQmILEFCSmIDEFiSlITEFibgri2Po4Nx1be45wnN6HxBQkpiAxBYkpSExBYgoSU5CYgsQUJKYgMQWJKUhMQWIKEnNTEN9VHOem7yoAAAAAAAAAAAAA/BvG+AUySOp07kL8PgAAAABJRU5ErkJggg==" height="auto" width="80" alt="Spanish" />
+                                </a>
+
+
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title title_form_linguagem">Espanhol</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer"> <span>GuiaTur</span><span>Copyright BioTech</span></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+    <script type="text/javascript" src="f7/js/framework7.min.js"></script>
+    <script src="m/dist/js/materialize.js"></script>
+    <script type="text/javascript" src="f7/js/my-app.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_favoritos.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_ondedormir.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_ondecomer.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_sairanoite.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_ondecomprar.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_oquevisitar.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_360image.js"></script>
+    <script type="text/javascript" src="f7/js/three.min.js"></script>
+    <script type="text/javascript" src="f7/js/360.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+
+</body>
+
+</html>

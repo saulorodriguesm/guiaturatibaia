@@ -1,0 +1,21 @@
+<script>
+    if (navigator.onLine) {
+        if (localStorage.getItem("keyFirst") == null || localStorage.getItem("keyFirst") == "undefined" || localStorage.getItem("keyFirst") == "") {
+            localStorage.setItem("keyFirst", "true");
+            window.location.reload();
+        } else {
+            if (localStorage.getItem("linguagem") == null || localStorage.getItem("linguagem") == "undefined" || localStorage.getItem("linguagem") == "") {
+                if (localStorage.getItem("keyTest") == null || localStorage.getItem("keyTest") == "undefined" || localStorage.getItem("keyTest") == "") {
+                    window.location.assign("formLinguagemInicial.html#!/login/");
+                } else {
+                    window.location.assign("formLinguagemInicial.html");
+                }
+            } else {
+                window.location.assign("home.html");
+            }
+        }
+    } else {
+        window.location.assign("notfound.html");
+    }
+
+</script>

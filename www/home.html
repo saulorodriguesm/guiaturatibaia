@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>GuiaTur</title>
+
+    <script src="m/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="m/dist/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="f7/css/framework7.min.css">
+    <link rel="stylesheet" href="m/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="f7/css/my-app.css">
+    <link rel="stylesheet" href="f7/css/animated.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="backLoadIndex">
+
+        <div class="load-Index">
+            <img class="load-img-Index responsive-img" src="img/slogam-apre.png">
+        </div>
+
+    </div>
+
+
+    <!-- App root element -->
+    <div id="app">
+        <div id="google_translate_element2"></div>
+
+        <div class="panel panel-left panel-reveal">
+            <div id="menuLat" class="menu">
+
+                <div class="menu-logo">
+                    <img class="responsive-img">
+                </div>
+
+                <ul class="collapsible animated zoomIn" data-collapsible="accordion">
+
+                    <img id="folha1" src="img/folha2.png">
+                    <img id="folha2" src="img/folha2.png">
+                    <img id="folha3" src="img/folha2.png">
+                    <img id="folha4" src="img/folha2.png">
+                    <img id="folha5" src="img/folha2.png">
+                    <img id="folha6" src="img/folha2.png">
+
+
+                    <li>
+                        <div class="collapsible-header"><i class="fas fa-utensils"></i>Onde Comer</div>
+                        <div class="collapsible-body">
+
+                            <div class="collection close-panel">
+                                <a href="/ondecomertudo/" class="collection-item">Tudo</a>
+                                <a href="/ondecomerbar/" class="collection-item">Bar</a>
+                                <a href="/ondecomerchurrascaria/" class="collection-item">Churrascaria</a>
+                                <a href="/ondedormiresfiharia/" class="collection-item">Esfiharia</a>
+                                <a href="/ondecomercomidamineira/" class="collection-item">Comida Mineira</a>
+                                <a href="/ondecomerdoceria/" class="collection-item">Doceria</a>
+                                <a href="/ondecomerfastfood/" class="collection-item">Fast Food</a>
+                                <a href="/ondecomerhamburgueria/" class="collection-item">Hamburgueria</a>
+                                <a href="/ondecomerlanchonete/" class="collection-item">Lanchonete</a>
+                                <a href="/ondecomerpadariacafeteria/" class="collection-item">Padaria e Cafeteria</a>
+                                <a href="/ondecomerpamonharia/" class="collection-item">Pamonheria</a>
+                                <a href="/ondecomerpizzaria/" class="collection-item">Pizzaria</a>
+                                <a href="/ondecomerrestaurante/" class="collection-item">Restaurante</a>
+                                <a href="/ondecomersorveteria/" class="collection-item">Sorveteria</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header "><i class="fa fa-bed" aria-hidden="true"></i>Onde Dormir</div>
+                        <div class="collapsible-body">
+
+                            <div class="collection">
+                                <a href="/ondedormirtudo/" class="collection-item">Tudo</a>
+                                <a href="/ondedormirhotel/" class="collection-item">Hotel</a>
+                                <a href="/ondedormirhotelfazenda/" class="collection-item">Hotel Fazenda</a>
+                                <a href="/ondedormirpousada/" class="collection-item">Pousadas</a>
+                                <a href="/ondedormirpousadacamping/" class="collection-item">Pousada–Camping</a>
+                                <a href="/ondedormirresort/" class="collection-item">Resort</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header "><i class="fa fa-shopping-cart" aria-hidden="true"></i>Onde Comprar</div>
+                        <div class="collapsible-body">
+
+                            <div class="collection">
+                                <a href="/ondecomprartudo/" class="collection-item">Tudo</a>
+                                <a href="/ondecomprarloja/" class="collection-item">Lojas</a>
+                                <a href="/ondecomprarsupermercado/" class="collection-item">Supermercado</a>
+                                <a href="/ondecomprarconveniencia/" class="collection-item">Conveniência</a>
+                                <a href="/ondecomprarpetshop/" class="collection-item">Pet Shop</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header "><i class="fa fa-camera" aria-hidden="true"></i>Passeios</div>
+                        <div class="collapsible-body">
+
+                            <div class="collection">
+                                <a href="/oquevisitartudo/" class="collection-item">Tudo</a>
+                                <a href="/oquevisitararquitetonico/" class="collection-item">Arquitetônicos</a>
+                                <a href="/oquevisitarcultural/" class="collection-item">Culturais</a>
+                                <a href="/oquevisitaresportivo/" class="collection-item">Esportivos</a>
+                                <a href="/oquevisitarnaturalrural/" class="collection-item">Naturais Rural</a>
+                                <a href="/oquevisitarnaturalurbano/" class="collection-item">Naturais Urbano</a>
+                                <a href="/oquevisitarreligioso/" class="collection-item">Religiosos</a>
+
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header "><i class="fas fa-cocktail"></i>Sair à noite</div>
+                        <div class="collapsible-body">
+
+                            <div class="collection">
+                                <a href="/sairanoitetudo/" class="collection-item">Tudo</a>
+                                <a href="/sairanoitebares/" class="collection-item">Bares</a>
+                                <a href="/sairanoiteentretenimento/" class="collection-item">Entretenimento</a>
+                                <a href="/sairanoitepubs/" class="collection-item">Pubs</a>
+                                <a href="/sairanoiteclubes/" class="collection-item">Clubes</a>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header"><i id="menuLatIconStar" class="fas fa-star"></i><a href="#" class="collection-item">Favoritos</a></div>
+
+                        <div class="collapsible-body">
+
+                            <div class="collection">
+                                <a href="/favoritosComer/" class="collection-item">Onde comer </a>
+                            </div>
+
+                            <div class="collection">
+                                <a href="/favoritosDormir/" class="collection-item">Onde dormir </a>
+                            </div>
+
+                            <div class="collection">
+                                <a href="/favoritosComprar/" class="collection-item">Onde comprar </a>
+                            </div>
+
+                            <div class="collection">
+                                <a href="/favoritosVisitar/" class="collection-item">O que visitar </a>
+                            </div>
+
+                            <div class="collection">
+                                <a href="/favoritosNoite/" class="collection-item">Sair à noite </a>
+                            </div>
+
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="statusbar"></div>
+
+        <div class="view view-main">
+            <div data-name="home" class="page format">
+
+
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" class="link icon-only panel-open">
+                                <i class="fas fa-list-ul"></i>
+                            </a>
+                        </div>
+                        <div class="right">GuiaTur</div>
+                        <div class="right padding-right">
+                            <div id="btn-limpa-linguagem" class="button_limpa_linguagem"><i class="fas fa-language fa-2x"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content background format">
+
+                    <div class="row">
+                        <div class="col-100">
+                            <img class="responsive-img" src="img/nuvem1.png" id="nuvem">
+                            <img class="responsive-img" src="img/nuvem1.png" id="nuvem2">
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="font-family: 'Roboto', sans-serif !important; width: 90% !important; position: relative; left: 50%; transform: translateX(-50%); border-radius: 5%;">
+
+                        <div class="card-header" style="color: #404040;">
+                            <h5 style="font-family: 'Bangers', cursive; color:#D92127; font-size: 120%;">Quer passear ?</h5> <i class="fas fa-award fa-2x" style="color: #ffbf00;"></i>
+                        </div>
+
+                        <div class="card-content card-content-padding" style="color: #fff; background-image: url(img/bg-loader.png); background-size: cover; font-size: 100%;">
+                            Atibaia é uma das cidades turisticas mais belas do Brasil, localizada na regiao com o segundo melhor clima do mundo, o local conta com bastante diversão para o seus visitantes oferecendo muitos atrativos e passeios que tal conhece-los ?
+                            
+
+                        </div>
+
+                        <a class="card-footer" href="/oquevisitartudo/" style="color: #D92127; font-family: 'Bangers', cursive; font-size: 120%;">
+                            Click aqui <i class="fas fa-angle-right fa-2x" style="color: #D92127 !important;"></i>
+                        </a>
+
+                    </div>
+
+
+
+                    <!--
+                    <div class="back-eventos">
+
+                        <div class="title-eventos-timiline center">Eventos</div>
+
+                        <div class="timiline">
+
+                            <div class="timeline-item">
+                                <div class="timeline-item-date">24 <small>DEC</small></div>
+                                <div class="timeline-item-divider"></div>
+                                <div class="timeline-item-content">
+                                    <div class="timeline-item-inner">
+                                        <div class="timeline-item-time">12:33</div>
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="timeline-item">
+                                <div class="timeline-item-date">24 <small>DEC</small></div>
+                                <div class="timeline-item-divider"></div>
+                                <div class="timeline-item-content">
+                                    <div class="timeline-item-inner">
+                                        <div class="timeline-item-time">12:33</div>
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-item-date">24 <small>DEC</small></div>
+                                <div class="timeline-item-divider"></div>
+                                <div class="timeline-item-content">
+                                    <div class="timeline-item-inner">
+                                        <div class="timeline-item-time">12:33</div>
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-item-date">24/12</div>
+                                <div class="timeline-item-divider"></div>
+                                <div class="timeline-item-content">
+                                    <div class="timeline-item-inner">
+
+                                        <table>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td class="td-menor"><i class="far fa-calendar-check fa-2x"></i></td>
+                                                    <td class="padding-left">Festa do Morango</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="td-menor"><i class="fas fa-receipt fa-2x"></i></td>
+
+                                                    <td class="desc-eventos padding-left">
+                                                        <p>Festa de Flores e Morangos de Atibaia tem como objetivo promover a produção rural regional que se destaca no mercado nacional com a produção de flores e morangos.</p>
+                                                    </td>
+
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td class="td-menor"><i class="fas fa-angle-right fa-2x"></i></td>
+                                                    <td class="padding-left"><a href="/designerEventos/">Ver mais</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+-->
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+    <script type="text/javascript" src="f7/js/framework7.min.js"></script>
+    <script src="m/dist/js/materialize.js"></script>
+    <script type="text/javascript" src="f7/js/my-app.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_favoritos.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_ondedormir.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_ondecomer.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_sairanoite.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_ondecomprar.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_oquevisitar.js"></script>
+    <script type="text/javascript" src="f7/js/ajax_360image.js"></script>
+    <script type="text/javascript" src="f7/js/three.min.js"></script>
+    <script type="text/javascript" src="f7/js/360.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+
+
+</body>
+
+</html>

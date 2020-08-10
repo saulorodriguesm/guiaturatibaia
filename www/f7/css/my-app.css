@@ -1,0 +1,699 @@
+@font-face {
+    src: url(fonts/Roboto-Regular.ttf);
+    font-family: 'Roboto';
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    top: 0 !important;
+}
+
+
+.filter-icon {
+    margin-right: 2%;
+}
+
+.spinner-layer {
+    border-color: #D92127 !important;
+}
+
+.navbar,
+.toolbar {
+    background-color: #D92127 !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: #fff !impotant;
+}
+
+.md .card {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 0px !important;
+}
+
+.ios .right .sliding {
+    color: #fff;
+}
+
+
+.md .icon-back{
+    display: none;
+}
+
+
+/*designe traduçao ----------------------------------------------------------------------------------------------------- */
+
+#goog-gt-tt {
+    display: none !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+.goog-te-menu-value:hover {
+    text-decoration: none !important;
+}
+
+
+#google_translate_element2 {
+    display: none !important;
+}
+
+/*cor dos inputs f7----------------------------------------------------------------------------------------------- */
+
+
+.md .input-focused:after,
+.md .item-input-focused .item-input-wrap:after {
+
+    border-bottom: 1px solid #D92127 !important;
+    box-shadow: 0 0.5px 0 0 #D92127 !important;
+    background: #D92127 !important;
+}
+
+.md .item-input-focused .item-floating-label {
+
+    color: #D92127 !important;
+}
+
+
+/*pages pre-config ---------------------------------------------------------------------------------------------- */
+
+.background-form-login,
+.background-form-linguagem,
+.background-form-alert {
+    background-image: url(img/bg-loader.png);
+    background-size: cover;
+}
+
+.card_form_login,
+.card_form_linguagem,
+.card_alert {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+.item-media a img {
+    transform: translateY(-35%);
+}
+
+.intem_content_form_lingaguem {
+    transform: translateY(20%);
+}
+
+#btn-login,
+#btn_form_alert {
+    background-color: #D92127 !important;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.ios .card {
+    margin: 0px !important;
+}
+
+
+/*formataçao lista de estabelecimentos ---------------------------------------------------------------------- */
+
+.card-footer .link {
+    color: #D92127 !important;
+}
+
+a {
+    word-wrap: break-word !important;
+    word-break: break-all !important;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+.dormir:nth-child(0) {
+    margin-top: 5%;
+}
+
+.dormir {
+    margin-top: 2%;
+}
+
+.swiper-slide {
+    width: 100% !important;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.od-cont span {
+    background-color: #fff;
+    opacity: 1;
+}
+
+.floating {
+    position: relative;
+    background-color: #D92127;
+    color: #fff;
+    margin-top: 5%;
+    padding: 2% !important;
+    font-size: 150%;
+    transform: translateY(-50%);
+    border-radius: 0px 15px;
+    box-shadow: 2px 6px 10px gray;
+}
+
+.demo-card-header-pic .card-header {
+    height: 0px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.demo-card-header-pic .card-content-padding .date {
+    color: #8e8e93;
+}
+
+/*menu lateral ----------------------------------------------------------------------------------------------- */
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    color: #000;
+}
+
+.menu-logo {
+    height: 150px;
+    background-color: #D92127;
+    background-image: url(img/logo.png);
+    background-size: cover !important;
+}
+
+.panel {
+    background-color: #fff !important;
+}
+
+.btn-floating {
+    background-color: #fff !important;
+}
+
+
+#menuLat .collapsible-mestre {
+    margin-top: -20%;
+}
+
+#menuLat .collapsible {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border: none;
+}
+
+#menuLat .collapsible a {
+    text-align: center;
+}
+
+#menuLat .collapsible .collapsible-header {
+    border: none;
+}
+
+#menuLat .collapsible .collapsible-header:click {
+    background-color: #D92127 !important;
+    color: #fff;
+    border-top: 1px solid;
+    border-color: #fff;
+    border-radius: 30px;
+}
+
+#menuLat .collapsible-body {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+#menuLat .collapsible-body a {
+    color: #357599 !important;
+}
+
+#menuLat .collapsible-body a:focus {
+    background-color: #D92127 !important;
+    color: #fff !important;
+}
+
+#menuLat .collapsible-header:focus {
+    background-color: #D92127 !important;
+    color: #fff !important;
+}
+
+.button_limpa_linguagem {
+    background-color: #D92127;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+
+/*formataçao da pagina do estabelecimento ----------------------------------------------------------------------------------- */
+
+.ios .right {
+    color: #fff !important;
+}
+
+.card {
+    width: 100% !important;
+}
+
+tr {
+    border: none !important;
+}
+
+.row .cont {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+
+.favoritos span {
+    display: none;
+}
+
+item {
+    display: none;
+}
+
+
+table {
+    width: 100%;
+    max-width: 100%;
+}
+
+td {
+    color: #5A5A5A !important;
+}
+
+
+.table-top {
+    margin-top: 10%;
+}
+
+.fab {
+    position: relative !important;
+}
+
+
+.td-menor {
+    padding-left: 10%;
+    padding-right: 2%;
+    width: 20%;
+}
+
+#mapa,
+#mapa iframe {
+    height: 300px !important;
+    width: 100% !important;
+    padding: 2% !important;
+}
+
+.card-empresas {
+    background-color: #D92127 !important;
+    color: #fff !important;
+    font-size: 5vw;
+}
+
+/*formataçao eventos ----------------------------------------------------------------------------------------------------- */
+
+.timeline-item-inner {
+    width: 95%;
+    height: auto;
+    padding: 8px !important;
+}
+
+.timiline {
+    padding-top: 5%;
+}
+
+.title-eventos-timiline {
+    background-color: #D92127;
+    color: #fff;
+    font-size: 150%;
+    border-radius: 5px 5px;
+    box-shadow: 2px 6px 10px gray;
+    width: 50%;
+    height: auto;
+    padding: 2%;
+    transform: translate(50%, 10%);
+
+}
+
+.desc-eventos {
+    text-align: justify;
+}
+
+.back-eventos {
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.arrow-eventos {
+    top: 50% !important;
+}
+
+.swing {
+    animation-duration: 1.5s !important;
+}
+
+/*cor icones da pagina de infromaçoes do estabelecimento  ---------------------------------------------------------------- */
+
+.ios .icon-back,
+.ios .icon-prev {
+    background-image: url(../../img/icon_back.png);
+}
+
+.ios i.icon {
+    background-size: 200% auto;
+}
+
+.fa-list-ul {
+    color: #fff !important
+}
+
+.color-instagram {
+    color: #DE2B76 !important;
+}
+
+.color-facebook {
+    color: #3b5998 !important;
+}
+
+.fa-simplybuilt {
+    color: #D79E50 !important;
+}
+
+.fa-phone {
+    color: #2DC100 !important;
+}
+
+.fa-globe-americas {
+    color: #1683DC !important;
+}
+
+.fa-map-marker-alt {
+    color: #E74C3C !important;
+}
+
+.fa-concierge-bell {
+    color: #F5D01F !important;
+}
+
+.fa-star {
+    color: #F5D01F !important;
+}
+
+.fa-clipboard {
+    color: #BF6527 !important;
+}
+
+.fa-map-marked-alt {
+    color: #79BD44 !important;
+}
+
+.fa-flag {
+    color: #FF5517 !important;
+}
+
+.fa-dollar-sign {
+    color: #F5D01F !important;
+}
+
+.fa-info {
+    color: #2fb0d2 !important;
+}
+
+.fa-calendar-alt {
+    color: #ff503c !important;
+}
+
+.fa-clock {
+    color: #5dba5e !important;
+}
+
+.fa-receipt {
+    color: #f1c40f !important;
+}
+
+.fa-angle-right {
+    color: #e74c3c !important;
+}
+
+.fa-angle-down {
+    color: #fff !important;
+}
+
+.fa-calendar-check {
+    color: #2980b9 !important;
+}
+
+
+/*animaçao carregamento de pagina -------------------------------------------------------------------------------  */
+
+.backLoad {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(img/bg-loader.png ) !important;
+}
+
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.load-img {
+    animation-name: load;
+    animation-duration: 1.5s !important;
+    animation-iteration-count: infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*animaçao abertura do app -------------------------------------------------------------------------------- */
+
+.backLoadIndex {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg-loader.png);
+    background-size: cover;
+}
+
+.load-Index {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.load-img-Index {
+    animation-name: loadIndex;
+    animation-duration: 1.5s !important;
+    animation-iteration-count: 1;
+    transform: scale(1.6, 1.6);
+}
+
+@keyframes loadIndex {
+    0% {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.6, 1.6);
+    }
+}
+
+
+/*animaçao das nuvens -------------------------------------------------------------------------------------------------------- */
+
+#nuvem {
+    animation-name: nuvem;
+    animation-iteration-count: infinite;
+    animation-duration: 50s;
+    animation-timing-function: linear
+}
+
+@keyframes nuvem {
+    0% {
+        transform: translate(-110%);
+    }
+
+    100% {
+        transform: translate(110%);
+    }
+}
+
+#nuvem2 {
+    margin-top: -30%;
+    animation-name: nuvem2;
+    animation-iteration-count: infinite;
+    animation-duration: 75s;
+    animation-timing-function: linear
+}
+
+@keyframes nuvem2 {
+    0% {
+        transform: translate(-110%);
+    }
+
+    100% {
+        transform: translate(110%);
+    }
+}
+
+
+/*animaçao das folhas ------------------------------------------------------------------------------------ */
+
+#folha1 {
+    width: 50px !important;
+    height: 27px !important;
+    opacity: 0;
+    animation-name: folha1;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes folha1 {
+    0% {
+        transform: translateX(-50%) translateY(-50%)rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%) translateY(5000%)rotate(360deg);
+        opacity: 1;
+    }
+}
+
+#folha2 {
+    width: 50px !important;
+    height: 27px !important;
+    opacity: 0;
+    animation-name: folha2;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes folha2 {
+    0% {
+        transform: translateX(0%) translateY(-50%)rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%) translateY(5000%)rotate(720deg);
+        opacity: 1;
+    }
+}
+
+#folha3 {
+    width: 50px !important;
+    height: 27px !important;
+    opacity: 0;
+    animation-name: folha3;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+@keyframes folha3 {
+    0% {
+        transform: translateX(10%) translateY(-50%)rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%) translateY(5000%)rotate(720deg);
+        opacity: 1;
+    }
+}
+
+#folha4 {
+    width: 50px !important;
+    height: 27px !important;
+    opacity: 0;
+    animation-name: folha4;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes folha4 {
+    0% {
+        transform: translateX(30%) translateY(-50%)rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%) translateY(5000%)rotate(1440deg);
+        opacity: 1;
+    }
+}
+
+#folha5 {
+    width: 50px !important;
+    height: 27px !important;
+    opacity: 0;
+    animation-name: folha5;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+
+@keyframes folha5 {
+    0% {
+        transform: translateX(60%) translateY(-50%)rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%) translateY(5000%)rotate(1440deg);
+        opacity: 1;
+    }
+}
+
+#folha6 {
+    width: 50px !important;
+    height: 27px !important;
+    opacity: 0;
+    animation-name: folha6;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+@keyframes folha6 {
+    0% {
+        transform: translateX(90%) translateY(-50%)rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%) translateY(5000%)rotate(1440deg);
+        opacity: 1;
+    }
+}
